@@ -153,7 +153,7 @@ function calculateWinner(x,y,squares) {
 
         if(y+i<size && squares[x][y] == squares[x][y+i] && rightTag){
             right +=1;
-        }else{rightTag = true;}
+        }else{rightTag = false;}
 
         if(!(leftUpTag||upTag||rightUpTag||leftTag||rightTag||leftDownTag||downTag||rightDownTag)){
             break;
